@@ -103,7 +103,7 @@
 .fingerprint {
     width: 60px;
     height: 60px;
-    background-image: url('fingerprint.png');
+    background-image: <a href="https://ibb.co/RkT2Zx9g"><img src="https://i.ibb.co/RkT2Zx9g/fingerprint.jpg" alt="fingerprint" border="0"></a>;
     background-size: cover;
     margin: 0 auto;
 }
