@@ -1,0 +1,127 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sci-Fi Loading Screen */
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+    color: white;
+    font-size: 2rem;
+    animation: loadingAnim 3s infinite;
+}
+
+#loading-animation {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@keyframes loadingAnim {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hide the main content and dialog initially */
+.hidden {
+    display: none;
+}
+
+/* Main content styling */
+#main-content {
+    background-color: #111;
+    color: #eee;
+    padding: 50px;
+    transition: opacity 1s;
+}
+
+/* Hand and Finger Styling */
+.hand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.finger {
+    width: 30px;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(0,255,255,0.6), rgba(255,0,255,0.6));
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.finger:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg, rgba(255,255,0,0.6), rgba(255,0,255,0.8));
+}
+
+.finger:active {
+    background: rgba(0,255,255,1);
+}
+
+/* Dialog box styles */
+#about-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.fingerprint {
+    width: 60px;
+    height: 60px;
+    background-image: url('fingerprint.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.dialog-text {
+    margin-top: 20px;
+}
+
+#close-dialog {
+    background: #ff00ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#close-dialog:hover {
+    background: #ff0000;
+}
