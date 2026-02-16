@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sci-fi loading screen -->
+    <div id="loading-screen">
+        <div id="loading-animation">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <div class="hand">
+                <div class="finger" id="finger-1"></div>
+                <div class="finger" id="finger-2"></div>
+                <div class="finger" id="finger-3"></div>
+                <div class="finger" id="finger-4"></div>
+                <div class="finger" id="finger-5"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Dialog box for About Me -->
+    <div id="about-dialog" class="hidden">
+        <div class="dialog-content">
+            <div class="fingerprint"></div>
+            <p class="dialog-text">Hi, I'm a passionate web developer with a love for coding and creating immersive experiences! I specialize in front-end technologies like HTML, CSS, and JavaScript.</p>
+            <button id="close-dialog">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
